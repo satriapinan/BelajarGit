@@ -1,0 +1,235 @@
+* {
+	margin         : 0;
+	padding        : 0;
+	text-decoration: none;
+	box-sizing     : border-box;
+	font-family    : 'Poppins', sans-serif;
+}
+body {
+	background-color: #ECECEC;
+}
+
+/* NAVBAR */
+nav {
+	background-color: #ECECEC;
+	width         : 100%;
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+	box-shadow    : 1px 2px 5px rgba(0,0,0,0.3);
+	padding       : 10px 0;
+	top           : 0;
+	position      : sticky;
+	z-index       : 1;
+}
+.logo {
+	width        : 150px;
+	display      : block;
+	margin-bottom: 5px;
+}
+#title {
+	font-size       : 18px;
+	font-weight     : 600;
+	color           : #fff;
+	background-color: #2FA4FF;
+	padding         : 0 2px;
+	border-radius   : 10px;
+	box-shadow      : 1px 2px 5px rgba(0,0,0,0.2);
+}
+#title:hover {
+	background-color: #3498FF;
+}
+
+/* Company Title */
+#company-title {
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+}
+.badge {
+	width        : 100px;
+	display      : block;
+	margin-bottom: 5px;
+}
+#company-title h1 {
+	font-size     : 30px;
+	letter-spacing: 5px;
+	color         : #3498FF;
+}
+#company-title p {
+	color         : #B4B4B4;
+	letter-spacing: 1px;
+	margin-top    : -13px;
+	font-weight   : bold;
+}
+
+/* Section Setting */
+section {
+	margin    : 70px;
+	text-align: center;
+}
+
+/* Company History */
+#history {
+	background-image   : linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/sejarah.jpg);
+	background-position: center;
+	background-size    : cover;
+	border-radius      : 10px;
+	padding            : 70px 50px; 
+	color              : #fff;
+}
+
+/* Row Setting */
+.row {
+	display        : flex;
+	justify-content: space-around;
+}
+
+/* Company Product */
+#product .row {
+	padding: 30px;
+}
+.company-product{
+	width        : 47%;
+	border-radius: 10px;
+	position     : relative;
+	overflow     : hidden;
+	box-shadow   : 1px 2px 5px rgba(0,0,0,0.3);
+	border       : 5px solid #fff;
+}
+.company-product img {
+	width  : 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height    : 100%;
+	width     : 100%;
+	position  : absolute;
+	top       : 0;
+	left      : 0;
+}
+.layer:hover{
+	background: rgba(52,152,255,0.7); 
+	transition: 0.5s;
+}
+.layer h3{
+	font-weight: 500;
+	color      : #fff;
+	font-size  : 26px;
+	bottom     : 0;
+	left       : 50%;
+	transform  : translateX(-50%);
+	position   : absolute;
+	transition : 0.5s;
+}
+.layer:hover h3{
+	bottom : 42%;
+	opacity: 1;
+}
+
+/* Company Founder */
+.company-founder {
+	margin-top      : 30px;
+	width           : 30%;
+	padding         : 20px;
+	background-color: #fff;
+	box-shadow      : 1px 2px 5px rgba(0,0,0,0.3);
+	border-radius   : 10px;
+}
+.company-founder:hover {
+	background-color: rgba(255,255,255,0.7);
+}
+.company-founder a {
+	color: #000;
+}
+
+/* Video Profile */
+iframe {
+	margin-top   : 30px;
+	width        : 95%;
+	height       : 500px;
+	border-radius: 10px;
+}
+
+/* Footer */
+footer {
+	box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+	padding   : 30px 0;
+}
+footer .row {
+	width: 90%;
+	margin: auto;
+}
+/* Footer - Company Info */
+#company-information {
+	display        : flex;
+	justify-content: space-between;
+	width          : 40%;
+	align-items    : center;
+}
+#contact {
+	width: 45%;
+}
+#contact a {
+	color: #000;
+}
+#contact img {
+	display: block;
+}
+#award {
+	width: 45%;
+	text-align: center;
+}
+.award-logo {
+	display        : flex;
+	align-items    : center;
+	justify-content: space-between;
+}
+.award-logo img[src="img/award1.png"] {
+	width: 50px;
+}
+.award-logo img[src="img/award2.svg"] {
+	width: 80px;
+}
+/* Footer - Company Help & Support */
+#message {
+	border-left : 1px solid rgba(0,0,0,0.2);
+	padding-left: 20px;
+	width       : 40%;
+}
+#message h2 {
+	text-align: center;
+}
+label input, label textarea {
+	padding      : 10px 18px;
+	min-width    : 100%;
+	max-width    : 100%;
+	margin-top   : 5px;
+	border-radius: 5px;
+	border-color : rgba(0,0,0,0.2);
+	border-width : 1px;
+}
+label textarea {
+	min-height: 100px;
+}
+#submit {
+	padding         : 10px 30px;
+	background-color: #2FA4FF;
+	font-weight     : 600;
+	color           : #fff;
+	border-radius   : 10px;
+	border          : none;
+	box-shadow      : 1px 2px 5px rgba(0,0,0,0.2);
+	cursor          : pointer;
+}
+#submit:hover {	
+	background-color: #3498FF;
+}
+/* Copyright */
+#copyright {
+	border-top : 1px solid rgba(0,0,0,0.2);
+	text-align : center;
+	padding-top: 30px;
+	margin-top : 25px;
+}

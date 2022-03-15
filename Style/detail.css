@@ -1,0 +1,19 @@
+#detail-founder {
+	text-align: left;
+	width     : 43%;
+	margin    : auto;
+}
+#detail-founder .row {
+	align-items: center;
+}
+#detail-founder h1 {
+	margin-top   : 50px;
+	margin-bottom: 30px;
+	text-align   : center;
+}
+table tr td {
+	height: 100%;
+}
+footer {
+	margin-top: 50px;
+}
